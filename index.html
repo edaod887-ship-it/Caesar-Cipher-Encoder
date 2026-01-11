@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+        <meta name="description"
+            content="Your complete guide to economy, banking, and loans. Learn about loan types, interest rates, and smart financial tips to make informed decisions.">
+        <meta name="keywords"
+            content="economy, loans, bank loans, banking, personal finance, interest rates, personal loans, financial awareness">
+        
+        <meta name="author" content="Abed">
+        <link rel="icon" href="../media/letter-made-from-gray-threads-isolated-top-view.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-r from-blue-400 via-blue-200 to-blue-500 animate-wave min-h-screen">
+
+    <header class="">
+        <p class="text-3xl font-bold text-center mt-10 lg:mt-4 text-white">Caesar Cipher Encoder</p>
+        <p class="text-md font-light text-center mt-2 text-white">Encrypt your message with Caesar Cipher</p>
+        </header>
+
+        <div class="bg-white max-w-xl mx-auto rounded-2xl p-5 mt-10">
+            <label for="message" class="m-2 text-lg">Enter your Message:</label>
+            <textarea id="message" placeholder="Enter your message here..."
+                class="block w-full min-h-[80px] border border-gray-300 rounded-xl shadow-lg mt-2 p-3 resize-none"></textarea>
+
+            <div class="mt-5">
+                <label for="shift">Shift Value:</label>
+                <input id="shift" type="number" class="border border-gray-300 rounded-xl shadow-lg mt-2 p-3">
+                <button id="resetBtn" class="bg-red-400 text-white rounded-2xl  p-2 w-[20%] hover:bg-red-500 ">
+                    Reset
+                </button>
+            </div>
+            <button  id="encryptBtn" class="bg-blue-300 rounded-2xl p-2 mt-5 w-[70%] mx-auto block text-white hover:bg-blue-400 lg:w-[50%] lg:mt-7">Encrypt Message</button>
+            
+            
+        </div>
+        
+        <div  class="bg-white max-w-xl mx-auto rounded-2xl p-5 mt-2  ">
+            <h2 class="text-md font-light">Encrypted Message:</h2>
+            <p id="output" class="overflow-hidden min-h-[80px] w-full border border-gray-300 rounded-xl shadow-lg mt-2 p-3"></p>
+        </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
