@@ -5,6 +5,7 @@ const reset = document.getElementById("resetBtn");
 const output = document.getElementById("output");
 
 function caesarCipher(text, shift) {
+  shift = shift % 26;
   return text
     .split("") 
     .map(char => {
